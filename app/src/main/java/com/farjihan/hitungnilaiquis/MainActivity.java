@@ -47,5 +47,17 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
         }}
         });
+
+        bersih.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nilai_tugas.setText("");
+                nilai_quis.setText("");
+                nilai_uts.setText("");
+                nilai_uas.setText("");
+                hasil.setText("");
+                nilai_tugas.requestFocus();
+            }
+        });
     }
 }
