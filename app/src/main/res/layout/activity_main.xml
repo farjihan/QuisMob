@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="60dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkutor Sederhana"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nilai Tugas"
+        android:id="@+id/nilai_tugas"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nilai Quis"
+        android:id="@+id/nilai_quis"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nilai Uts"
+        android:id="@+id/nilai_uts"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nilai Uts"
+        android:id="@+id/nilai_uas"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Proses Hitung"
+            android:id="@+id/hitung"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hitung"
+            android:text="Bersih"
+            android:id="@+id/bersih"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/hasil"
+        android:text="HASIL"
+        android:textSize="30sp" />
+
+</LinearLayout>
+
